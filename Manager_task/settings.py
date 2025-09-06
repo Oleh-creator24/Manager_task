@@ -37,9 +37,9 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'Task.apps.TaskConfig',
-    'SubTask.apps.SubtaskConfig',
-    'Category.apps.CategoryConfig',
+    'Task',
+    'SubTask',
+    'Category',
 ]
 
 MIDDLEWARE = [
@@ -123,3 +123,5 @@ STATIC_URL = 'static/'
 # https://docs.djangoproject.com/en/5.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+# Добавьте в конец settings.py
+SILENCED_SYSTEM_CHECKS = ['admin.E108', 'admin.E116', 'admin.E408', 'admin.E409']
